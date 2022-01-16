@@ -1,0 +1,12 @@
+.title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    &_left {
+        font-weight: 700;
+        font-size: 36px;
+        align-items: flex-end;
+        color: #FFFFFF;
+        justify-content: start;
+    }
+}
