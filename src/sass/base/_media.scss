@@ -12,7 +12,48 @@
             margin-right: 10px;
         }
     }
+    .consultation {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .carousel {
+        .slick-dots {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            button {
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                font-size: 0;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color: white;
+                border: 1px solid black;
+            }
+            .slick-active {
+                button {
+                    background-color: $main-color;
+                    border: 1px solid $main-color;
+                }
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+        &-item {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    .feed {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
+
 
 @media (max-width: 767px) {
     .header {
@@ -29,7 +70,6 @@
             font-size: 16px;
         }
     }
-
     .promo {
         min-height: 550px;
         &__wrapper {
@@ -47,14 +87,49 @@
             width: 400px;
         }
     }
-
     .advantages {
         &__item {
             margin-left: 10px;
             margin-right: 10px;
         }
     }
+    .carousel {
+        &__inner {
+            width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 155px;
+            height: 36px;
+            font-size: 15px;
+            line-height: 34px;
+        }
+    }
+    .feed {
+        &__item {
+            padding-top: 50px;
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        &__text {
+            padding-left: 30px;
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
 }
+
 
 @media (max-width: 575px) {
     .header {
@@ -74,7 +149,6 @@
             font-size: 14px;
              }
     }
-
     .promo {
         min-height: 500px;
         &__wrapper {
@@ -102,7 +176,6 @@
             font-size: 14px;
         }
     }
-
     .advantages {
         min-height: 400px;
         padding: 45px 0 45px 0;
@@ -124,4 +197,42 @@
             line-height: 15px;
         }
     }
+    .catalog {
+        &__tab {
+            padding-left: 7px;
+            padding-right: 7px;
+            width: 94px;
+            height: 42px;
+            font-size: 12px;
+            line-height: 19px;
+            &:nth-child(2) {
+                line-height: 38px;  
+            }
+        }
+    }
+    .feed {
+        &__item {
+            padding-top: 40px;
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+        &__text {
+            padding-left: 20px;
+            padding-top: 7px;
+        }
+        &__spec {
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 20px;
+            position: relative;
+            right: 70px;
+            top: 20px;
+            padding-bottom: 20px;
+
+        }
+    }
+
 }
