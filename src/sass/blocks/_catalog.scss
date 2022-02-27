@@ -130,13 +130,15 @@
             margin-left: 20px;
             transform: translateX(0%);
             transition: 0.5s all;
-            padding-right: 20px;
-            padding-left: 15px;
-            margin-bottom: 0;
-            list-style-type: none;
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
+            }
+            ul {
+                padding-right: 20px;
+                padding-left: 15px;
+                margin-bottom: 0;
+                list-style-type: none;
             }
             li {
                 position: relative;
@@ -154,7 +156,6 @@
                     left: -14px;
                     top: 7px;
                 }
-                
             }
         }
         &__back {
