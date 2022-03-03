@@ -53,6 +53,9 @@
         justify-content: center;
         align-items: center;
     }
+    iframe {
+        width: 100%;
+    }
 }
 
 @import 'base/media'
